@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (product.idcod) {
             await updateProduct(product);
         } else {
-            delete product.idcod; // Asegúrate de no enviar un ID vacío en un nuevo producto
+            delete product.idcod; // Asegúrase de no enviar un ID vacío en un nuevo producto
             console.log('Creating new product:', product); // Depuración
             await createProduct(product);
         }
