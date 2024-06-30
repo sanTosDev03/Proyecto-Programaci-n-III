@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" id="logo">
+            ☰
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard Info</a>
+            </div>
+        </div>
+        <div class="title">Dashboard</div>
+    </header>
+    <main class="main__Dashboard">
+        <section class="summary">
+            <h2>Total Income: $<span id="totalIncome"></span></h2>
+        </section>
+        <section class="chart-container">
+            <canvas id="monthlyGainsChart"></canvas>
+        </section>
+        <section class="chart-container">
+            <canvas id="productsSoldChart"></canvas>
+        </section>
+        <section class="chart-container">
+            <canvas id="productsIncomeChart"></canvas>
+        </section>
+        <section class="table-container">
+            <h2>Products Sold Per Month</h2>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Sales (January)</th>
+                        <th>Sales (February)</th>
+                        <th>Sales (March)</th>
+                        <th>Sales (April)</th>
+                        <th>Sales (May)</th>
+                        <th>Sales (June)</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/ui.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

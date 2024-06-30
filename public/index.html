@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Lescano</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" id="logo">
+            ☰
+            <div class="dropdown-menu" id="dropdown-menu">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard Info</a>
+            </div>
+        </div>
+        
+        <div class="title">Productos</div>
+        <div class="search-container">
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search by title">
+        </div>
+    </header>
+    <main>
+        <section class="toolbar">
+            <button class="toolbar-button" id="add-product-button">Add Product</button>
+        </section>
+        <section class="table-container">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>
+                            Price (Pesos)
+                            <button class="sort-button" id="sort-peso-asc">↑</button>
+                            <button class="sort-button" id="sort-peso-desc">↓</button>
+                        </th>
+                        <th>
+                            Price (Dollar)
+                        </th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <!-- Modal for adding/editing product -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2>Add/Edit Product</h2>
+            <form id="product-form">
+                <label for="product-title">Title:</label>
+                <input type="text" id="product-title" name="title" required>
+                
+                <label for="product-peso">Price (Peso):</label>
+                <input type="number" id="product-peso" name="precioPeso" required>
+                
+                <label for="product-dollar">Price (Dollar):</label>
+                <input type="number" id="product-dollar" name="precioDolar" required>
+                
+                <label for="product-date">Date:</label>
+                <input type="date" id="product-date" name="fecha" required>
+                
+                <input type="hidden" id="product-id" name="idcod">
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
+

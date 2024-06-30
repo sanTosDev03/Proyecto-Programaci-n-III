@@ -1,0 +1,20 @@
+{
+    "totalIncome": 1800000,
+    "monthlyGains": [
+        { "month": "January", "gain": 200000 },
+        { "month": "February", "gain": 250000 },
+        { "month": "March", "gain": 300000 },
+        { "month": "April", "gain": 200000 },
+        { "month": "May", "gain": 400000 },
+        { "month": "June", "gain": 450000 }
+    ],
+    "products": [
+        { "idcod": "Ot4XOulsLY", "titulo": "Apple MacBook Pro M3", "precioPeso": 3999999, "precioDolar": 2930, "cantidadVendida": [10, 15, 8, 12, 14, 10] },
+        { "idcod": "7Ubgr7cQl1", "titulo": "Tablet Apple iPad 10.2", "precioPeso": 120000, "precioDolar": 88, "cantidadVendida": [25, 30, 28, 35, 40, 38] },
+        { "idcod": "Vzxy20u4IC", "titulo": "Smartwatch Fitbit Versa 3", "precioPeso": 60000, "precioDolar": 45, "cantidadVendida": [50, 45, 48, 55, 60, 62] },
+        { "idcod": "xMpQMeqUUQ", "titulo": "Laptop Dell Inspiron 15", "precioPeso": 250000, "precioDolar": 183, "cantidadVendida": [20, 25, 22, 28, 30, 32] },
+        { "idcod": "S5Yv8qhtww", "titulo": "Smartphone Samsung Galaxy S22", "precioPeso": 150000, "precioDolar": 109, "cantidadVendida": [60, 70, 65, 75, 80, 85] },
+        { "idcod": "cN8f87qIoB", "titulo": "Auriculares Alpina F10", "precioPeso": 6867, "precioDolar": 6, "cantidadVendida": [100, 110, 105, 115, 120, 125] },
+        { "idcod": "Xnw9sfdZIE", "titulo": "Apple Iphone 15 Pro", "precioPeso": 1500000, "precioDolar": 1300, "cantidadVendida": [5, 7, 6, 8, 10, 9] }
+    ]
+}
